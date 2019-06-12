@@ -76,3 +76,5 @@ gem 'kaminari'
 gem 'simple_form'
 
 gem 'font-awesome-rails'
+
+gem 'devise'
