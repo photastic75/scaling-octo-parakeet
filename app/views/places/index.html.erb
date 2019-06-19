@@ -26,15 +26,6 @@
 
     <br />
 
-    <% if place.photos.present?%>
-      <div class="col-12">
-       <%= image_tag place.photos.last.picture.to_s || default_image, class: "img-fluid" %>
-    </div>
-      <blockquote>
-        <%= place.photos.last.caption %>
-      </blockquote>
-    <% end %>
-
 
   </div>
 <% end %>
