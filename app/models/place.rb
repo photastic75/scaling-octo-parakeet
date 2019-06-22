@@ -1,4 +1,6 @@
 class Place < ApplicationRecord
+  mount_uploader :picture, PictureUploader
+  
   belongs_to  :user
   has_many    :comments
   has_many    :photos
@@ -10,6 +12,6 @@ class Place < ApplicationRecord
   validates :address, presence: true
   validates :description, presence: true
 
-  mount_uploader :picture, PictureUploader
+  
 
 end

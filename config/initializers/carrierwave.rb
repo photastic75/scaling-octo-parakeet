@@ -1,4 +1,5 @@
 CarrierWave.configure do |config|
+
   config.fog_provider = 'fog/aws'
   config.fog_credentials = {
     provider:               'AWS',
@@ -6,6 +7,7 @@ CarrierWave.configure do |config|
     aws_secret_access_key:  ENV["AWS_SECRET_KEY"],
 
   }
-
+  config.storage = :fog
   config.fog_directory =    ENV["AWS_BUCKET"]
+  
 end 
