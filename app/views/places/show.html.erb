@@ -61,7 +61,7 @@
     <div class="col-10 col-sm-5">
         <small><%= photo.user.email %></small>
         <br />
-        <%= photo.created_at%>
+        <%= photo.created_at.strftime("%B %d, %Y")%>
         <blockquote>
         <%= photo.caption %>
         </blockquote>
